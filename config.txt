@@ -1,0 +1,25 @@
+[global]
+test_url =https://bento.test.propflo.in/auth/sign-in
+production_url=https://bento.propflo.ai/auth/sign-in
+browser_name=edg
+
+[edit_profile_name]
+changed_name=Addi Ramesh
+
+[phone_num]
+same_num=9398448286
+same_mail=yuasudheer1235@gmail.com
+
+[email]
+other_mail=yuasudheer1346@gmail.com
+other_num=9398448287
+
+
+[waiting_time]
+min_wait=2
+avg_wait=3
+max_wait=5
+
+#float(config.get('waiting_time', 'min_wait'))
+#float(config.get('waiting_time', 'avg_wait'))
+#float(config.get('waiting_time', 'max_wait'))
