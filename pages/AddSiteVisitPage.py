@@ -48,7 +48,7 @@ class AddSiteVisitPage:
         #validating in activities page wheather the site visit adding activity is displayed or not
         activites=self.driver.find_element(By.XPATH,"//a[@id='activities']")
         self.driver.execute_script("arguments[0].click()",activites)
-        time.sleep(2)
+        time.sleep(3)
         expectedd="Site Visit"
         actuall=self.driver.find_element(By.XPATH,"//div[@class ='py-4 ml-6 ng-star-inserted']//p").text
         if expectedd in actuall:

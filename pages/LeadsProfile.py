@@ -46,7 +46,7 @@ class LeadsProfile:
     def clickToChangeAssignedPersonOfOpportunity(self):
         self.driver.find_element(By.XPATH, self.assignedPerson_XPATH).click()
         time.sleep(2)
-        self.driver.find_element(By.XPATH, "(//div[3]/app-select-dropdown/div/div/div/div)[4]").click()
+        self.driver.find_element(By.XPATH, "(//div[3]/app-select-dropdown/div/div/div/div)[3]").click()
         time.sleep(3)
         actuall=self.driver.find_element(By.XPATH,"//div[@class='ng-star-inserted']//p").text
         if "Opportunity assigned" in actuall:

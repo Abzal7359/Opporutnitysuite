@@ -134,18 +134,18 @@ def step_impl(context):
                 flag = False
     assert flag
 
-#
-# @when(u'go on opportunities')
-# def step_impl(context):
-#     act = ActionChains(context.driver)
-#     (act
-#      .move_to_element(context.driver.find_element(By.XPATH, "//span[contains(text(),'Sales')]"))
-#      .move_to_element(context.driver.find_element(By.XPATH, "(//a[normalize-space()='Opportunities'])"))
-#      .click()
-#      .perform())
-#     time.sleep(3)
-#
-#
+
+@when(u'go on opportunities')
+def step_impl(context):
+    act = ActionChains(context.driver)
+    (act
+     .move_to_element(context.driver.find_element(By.XPATH, "//span[contains(text(),'Sales')]"))
+     .move_to_element(context.driver.find_element(By.XPATH, "(//a[normalize-space()='Opportunities'])"))
+     .click()
+     .perform())
+    time.sleep(3)
+
+
 # @when(u'create task enter details')
 # def step_impl(context):
 #     context.driver.find_element(By.XPATH, "//app-tasks-list/div[1]/div[1]/div[2]/button").click()
