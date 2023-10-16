@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 @when(u'enter login details and go to opportunities')
 def step_impl(context):
     context.LOP = LoginPage(context.driver)
-    context.LOP.enter_mail_and_password("manoj.assetmonk@gmail.com","Propflo@1234")
+    context.LOP.enter_mail_and_password("masud.abdullah@bentolabs.io","Propflo@1234")
     context.LOP.clickSignIn()
     act = ActionChains(context.driver)
     (act

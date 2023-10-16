@@ -20,4 +20,4 @@ Feature: Applying filter and create tab and check in kanban view
     |source     |     type  | name            |
     |Sub        | Face      |  facebook       |
     |Source     | Digi      |  All digital    |
-    |Assign     | Venk      |  Assigne      |
+    |Assign     | Bent      |  Assigne      |

@@ -21,7 +21,7 @@ class KanbanViewPage:
     add_label_button_xpath = "(//span[normalize-space()='Add Label'])[1]"
     assign_opportunity_owner_xpath = "(//span[normalize-space()='Assign Opportunity Owner'])[1]"
     dropdown_button_xpath = "(//button[@class='absolute inset-y-0 right-0 flex items-center pr-3'])[1]"
-    selected_item_xpath = "(//input[contains(@id,'selectedItem-')]//parent::div)[10]"
+    selected_item_xpath = "(//app-select-dropdown/div/div/div/div/label)"
     save_button_xpath = "(//button[normalize-space()='Save'])[1]"
     val=[]
     l=[]

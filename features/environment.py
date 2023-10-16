@@ -15,7 +15,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read(r'config.txt')
 
-url = config.get('global', 'test_url')
+url = config.get('global', 'production_url')
 browser = config.get('global', 'browser_name')
 
 
@@ -50,7 +50,7 @@ def before_all(context):
 
     # -------------------------------------------------
     #
-    # context.driver.find_element(By.XPATH, "//input[@id='email']").send_keys("manoj.assetmonk@gmail.com")
+    # context.driver.find_element(By.XPATH, "//input[@id='email']").send_keys("masud.abdullah@bentolabs.io")
     # context.driver.find_element(By.XPATH, "(//input[@id='examplePassword0'])[1]").send_keys("Propflo@1234")
     # context.driver.find_element(By.XPATH, "//button[normalize-space()='Sign in']").click()
     # time.sleep(3)

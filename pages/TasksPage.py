@@ -111,6 +111,7 @@ class TasksPage:
         element = wt.until(
             EC.element_to_be_clickable((By.XPATH, "//div/div[1]/div[1]/div/div/span//*[local-name()='svg']")))
         element.click()
+        time.sleep(3)
         self.driver.find_element(By.XPATH, "//*[@id='file-upload - ']").send_keys(
             "C://Users/abzalhussain/Desktop/building.jpg")
 
