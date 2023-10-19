@@ -47,7 +47,7 @@ def step_impl(context):
 
     context.LLC = LeadLabelsConfiguratorPage(context.driver)
     context.LLC.go_to_leads_label_configurator()
-    context.driver.find_element(By.XPATH, "//*[@id='sub-menu-5']/span[2]/span/a").click()
+    context.driver.find_element(By.XPATH, "(//a[text()='Opportunity'])[2]").click()
 
 @when(u'change position of _label')
 def step_impl(context):

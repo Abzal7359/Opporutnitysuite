@@ -31,18 +31,18 @@ def before_all(context):
 
 
         #______________________________________________________________________________________
-        options = webdriver.ChromeOptions()
-        options.add_argument("--disable-notifications")
-        options.add_experimental_option("detach", True)
-        context.driver = webdriver.Remote(
-            command_executor='http://localhost:4444/wd/hub',
-            options=options
-        )
-
         # options = webdriver.ChromeOptions()
         # options.add_argument("--disable-notifications")
         # options.add_experimental_option("detach", True)
-        # context.driver = webdriver.Chrome(options=options)
+        # context.driver = webdriver.Remote(
+        #     command_executor='http://localhost:4444/wd/hub',
+        #     options=options
+        # )
+
+        options = webdriver.ChromeOptions()
+        options.add_argument("--disable-notifications")
+        options.add_experimental_option("detach", True)
+        context.driver = webdriver.Chrome(options=options)
 
     context.driver.maximize_window()
     context.driver.implicitly_wait(10)
